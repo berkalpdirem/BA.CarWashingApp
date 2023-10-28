@@ -12,5 +12,10 @@ namespace BA.CarWashingApp.Entity.Concrate
         public string name { get; set; }
         public double quantity { get; set; }
         public double stockLimit { get; set; }
+
+        // Navigation Properties
+
+        //Stokİtem-Washing Relations
+        public List<Washing> washings { get; set; }
     }
 }

@@ -18,6 +18,7 @@ namespace BA.CarWashingApp.Entity.Concrate
         public DateTime washingEnd { get; set; }
         public Station washingStation { get; set; }
 
+
         //Navigation Properties
         
         //Washing-Car Relation
@@ -27,6 +28,10 @@ namespace BA.CarWashingApp.Entity.Concrate
         //Washing-Employee Relation
         public Employee employee { get; set; }
         public int employeeID { get; set; }
+
+        //Washing-Stokİtem Relation
+        public List<StockItem> usingItems { get; set; }
+
 
     }
 }
